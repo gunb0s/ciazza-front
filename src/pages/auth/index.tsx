@@ -1,12 +1,36 @@
+import "@/styles/globals.css";
+
 const AuthPage = () => {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="p-6 m-4 bg-white rounded shadow-md">
-        <h1 className="text-xl font-semibold">GitHub OAuth 인증</h1>
-        <p className="mt-4">GitHub 계정으로 로그인하세요.</p>
-        <button className="px-4 py-2 mt-4 text-white bg-blue-500 rounded hover:bg-blue-700">
-          <a href={"http://localhost:8080/oauth2/authorization/github"}>GitHub으로 로그인</a>
-        </button>
+      <div className="p-8 m-4 bg-white rounded-lg shadow-xl">
+        <h1 className="text-2xl font-bold text-center mb-4">소셜 계정으로 로그인</h1>
+        <div className="space-y-4">
+          <a
+            href="http://localhost:8080/oauth2/authorization/github"
+            className="block w-full py-2 text-center text-white bg-black rounded hover:bg-gray-800 transition duration-150 ease-in-out"
+          >
+            GitHub으로 로그인
+          </a>
+          <a
+            href="http://localhost:8080/oauth2/authorization/google"
+            className="block w-full py-2 text-center text-white bg-blue-500 rounded hover:bg-blue-600 transition duration-150 ease-in-out"
+          >
+            Google로 로그인
+          </a>
+          <a
+            href="http://localhost:8080/oauth2/authorization/kakao"
+            className="block w-full py-2 text-center text-white bg-yellow-400 rounded hover:bg-yellow-500 transition duration-150 ease-in-out"
+          >
+            카카오톡으로 로그인
+          </a>
+          <a
+            href="http://localhost:8080/oauth2/authorization/apple"
+            className="block w-full py-2 text-center text-white bg-black rounded hover:bg-gray-800 transition duration-150 ease-in-out"
+          >
+            Apple로 로그인
+          </a>
+        </div>
       </div>
     </div>
   );
