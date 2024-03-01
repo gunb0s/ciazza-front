@@ -4,7 +4,7 @@ const AuthPage = () => {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="p-8 m-4 bg-white rounded-lg shadow-xl">
-        <h1 className="text-2xl font-bold text-center mb-4">소셜 계정으로 로그인</h1>
+        <h1 className="text-2xl text-blue-950 font-bold text-center mb-4">소셜 계정으로 로그인</h1>
         <div className="space-y-4">
           <a
             href="http://localhost:8080/oauth2/authorization/github"
