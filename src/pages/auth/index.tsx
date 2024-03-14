@@ -7,7 +7,7 @@ const AuthPage = () => {
         <h1 className="text-2xl text-blue-950 font-bold text-center mb-4">소셜 계정으로 로그인</h1>
         <div className="space-y-4">
           <a
-            href="http://localhost:8080/oauth2/authorization/github"
+            href="https://github.com/login/oauth/authorize?scope=user:email&client_id=b84d261c041eaa27ea65"
             className="block w-full py-2 text-center text-white bg-black rounded hover:bg-gray-800 transition duration-150 ease-in-out"
           >
             GitHub으로 로그인
