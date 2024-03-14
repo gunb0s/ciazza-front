@@ -20,8 +20,9 @@ const RedirectPage = () => {
         .then((response) => response.json())
         .then((data) => {
           console.log("인증 성공:", data);
+          localStorage.setItem("accessToken", data.access_token);
           // 성공적인 인증 후 사용자를 홈페이지로 리다이렉트
-          router.push("/");
+          router.push("/welcome");
         })
         .catch((error) => {
           console.error("인증 실패:", error);
